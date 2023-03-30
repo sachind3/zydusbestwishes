@@ -53,7 +53,7 @@ const DoctorInfo = () => {
           }) => (
             <>
               <Form
-                className="py-4 px-10 bg-white shadow"
+                className="py-4 px-10 bg-white shadow mt-6"
                 onSubmit={handleSubmit}
               >
                 <h4 className="text-theme_purple-500 font-bold text-2xl text-center mb-4">
