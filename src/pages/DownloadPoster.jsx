@@ -54,7 +54,7 @@ const DownloadPoster = () => {
   return (
     <>
       <div className="celebration fixed top-0 left-0 h-full w-full z-[1]"></div>
-      <div className="relative w-full mt-6">
+      <div className="relative w-full mt-auto mb-auto">
         <div id="fullImg" className="fullImg w-[310px] mx-auto bg-white shadow">
           {tempInfo?.design === "1" && (
             <Design1 docInfo={docInfo} tempInfo={tempInfo} />

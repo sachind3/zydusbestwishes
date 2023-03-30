@@ -47,5 +47,6 @@
   }
   .celebration {
     background: url('./assets/celebration.gif') repeat center center;
+    background-size: 160px;
   }
 }
