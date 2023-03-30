@@ -12,31 +12,109 @@ const data = [
     name: "birthday",
     path: "birthday-1",
     design: 1,
+    pdf: {
+      name: {
+        x: 230,
+        y: 355,
+        size: 26,
+      },
+      img: {
+        x: 128,
+        y: 392,
+        width: 226,
+        height: 226,
+      },
+    },
   },
   {
     name: "birthday",
     path: "birthday-2",
     design: 2,
+    pdf: {
+      name: {
+        x: 230,
+        y: 335,
+        size: 28,
+      },
+      img: {
+        x: 109,
+        y: 415,
+        width: 263,
+        height: 263,
+      },
+    },
   },
   {
     name: "birthday",
     path: "birthday-3",
     design: 3,
+    pdf: {
+      name: {
+        x: 230,
+        y: 355,
+        size: 26,
+      },
+      img: {
+        x: 128,
+        y: 392,
+        width: 226,
+        height: 226,
+      },
+    },
   },
   {
     name: "anniversary",
     path: "anniversary-1",
     design: 1,
+    pdf: {
+      name: {
+        x: 230,
+        y: 335,
+        size: 28,
+      },
+      img: {
+        x: 128,
+        y: 392,
+        width: 226,
+        height: 226,
+      },
+    },
   },
   {
     name: "anniversary",
     path: "anniversary-2",
     design: 2,
+    pdf: {
+      name: {
+        x: 230,
+        y: 335,
+        size: 28,
+      },
+      img: {
+        x: 109,
+        y: 415,
+        width: 263,
+        height: 263,
+      },
+    },
   },
   {
     name: "anniversary",
     path: "anniversary-3",
     design: 3,
+    pdf: {
+      name: {
+        x: 230,
+        y: 335,
+        size: 28,
+      },
+      img: {
+        x: 128,
+        y: 392,
+        width: 226,
+        height: 226,
+      },
+    },
   },
 ];
 
@@ -61,17 +139,11 @@ const Poster = () => {
     let template_path = document
       .querySelector(".swiper-slide-active")
       .getAttribute("template-path");
-    let template_design = document
-      .querySelector(".swiper-slide-active")
-      .getAttribute("template-design");
-    setTempInfo((prev) => {
-      return {
-        ...prev,
-        name: template_name,
-        path: template_path,
-        design: template_design,
-      };
+    let findTemp = data.filter((item) => {
+      return item.name === template_name && item.path == template_path;
     });
+    setTempInfo(findTemp[0]);
+
     navigate("/doctor-information");
   };
 

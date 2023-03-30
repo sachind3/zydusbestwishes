@@ -1,4 +1,5 @@
 const Design1 = ({ docInfo, tempInfo }) => {
+  console.log(docInfo);
   return (
     <div className="flex flex-col text-center bg-white">
       <div className="relative">

@@ -9,8 +9,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "downloadjs": "^1.4.7",
     "formik": "2.2.9",
     "html2canvas": "1.0.0",
+    "pdf-lib": "^1.17.1",
     "react": "^18.2.0",
     "react-cropper": "2.1.8",
     "react-dom": "^18.2.0",
